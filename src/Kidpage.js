@@ -3,7 +3,7 @@ import './index.css';
 import './App.css';
 import Photo from './Photo';
 import search from './Images/searchicon.png';
-import klogo from './Images/funlogo.png';
+
 
 const clientID = `?client_id=p1cATSWM7nGnCQDJrx-fyCkGbyIpp6mQRezQvwu7FD0`;
 const mainUrl = `https://api.unsplash.com/photos/`;
