@@ -1,38 +1,193 @@
-.App {
+html{
+  scroll-behavior: smooth;
+}
+
+.navbar{
+  display:flex;  
+}
+
+.nav-comp{
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  align-items: center;
+  margin-left: 60px;
+  margin-right: 10%;
+  flex: content;
+
+}
+
+.logoset{
+  width: 100px;
+  height : 100px;
+  margin-left: 20%;
+  
+}
+.fun-logo{
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  margin-right: 20%;
+  margin-top: auto; 
+  margin-bottom: 10px; 
+}
+
+.content-wrap{
+  background-color: rgb(245, 179, 99);
+  position:relative;
+  overflow: hidden; 
+}
+.bgimg-food{
+  position: absolute;
+  left: 30%;
+  top:20%;
+  opacity: 0.1;
+  
+}
+.content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 150px;
+  margin-top: 50px;
+  margin-bottom: 10%;
+}
+
+.foods{
+  width: 250px;
+  height: 200px;
+  border-radius: 80px;
+  opacity: 1;
+}
+h1{
   text-align: center;
+  margin-top: 30px;
+  color: aliceblue;
+  font-family:'Times New Roman', Times, serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.food-wrap{
+  box-shadow: 1px 1px 8px rgb(0, 0, 0);
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(229, 206, 174);
+}
+.price-tag{
+  display: flex;
+  justify-content: space-between ;
+  color: black;
+  font-weight: 400;
+}
+.cost{
+  font-weight: 500;
+  border: 3px solid yellow;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgb(245, 245, 23);
+}
+
+
+.kid-section{
+  background-color: rgb(109, 114, 109);
+  position: relative;
+}
+.imgline{
+  position:absolute;
+  right: 80px;
+  top: 80px;
+  font-weight: 800;
+}
+
+.imgline2{
+  position:absolute;
+  right: 100px;
+  top: 120px;
+  font-weight: 500;
+}
+
+.bgimg-fun{
+  opacity: 0.1;
+  position:absolute;
+  right: 30px;
+  top: 80px;
+  border: 3px solid;
+  width: 150px;
+  
+}
+
+.kbar{
+  border:2px solid white ;
+  background-color: rgb(240, 229, 210);
+  text-align: center;
+  padding: 10px;
+  font-weight: 500;
+  
+}
+
+footer{
+  text-align: center;
+  background-color: rgb(81, 79, 78);
+  color: darkgrey;
+  border: 1px solid ;
+}
+
+.menu{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top:30px;
+  gap: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn{
+  width: 5rem;
+  height: 2rem;
+  padding: 2px;
+  background-color: rgb(12, 174, 238);
+  color: whitesmoke;
+  font-weight: 600;
+  border-radius: 20px;
+}
+.btn:hover{
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-curse{
+  position: absolute;
+  top: 0;
+  left: 25%;
+  background-color: rgb(142, 109, 76);
+  color: aliceblue;
+  font-weight: 600;
+  width:50%;
+  min-height: 100px;
+  padding: 20px 100px 100px 100px ;
+  text-align: center;
+}
+.about-curse{
+  position: absolute;
+  top: 0;
+  left: 35%;
+  background-color: rgb(142, 109, 76);
+  color: aliceblue;
+  font-weight: 600;
+  width:auto;
+  min-height: 100px;
+  padding: 10px 100px 100px 100px ;
+  text-align: center;
+
+}
+.support-curse{
+  position: absolute;
+  top: 0;
+  left: 45%;
+  background-color: rgb(142, 109, 76);
+  color: aliceblue;
+  font-weight: 600;
+  width:auto;
+  min-height: 100px;
+  padding: 10px 100px 100px 100px ;
+  text-align: center;
 }
