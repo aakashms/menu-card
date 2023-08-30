@@ -163,7 +163,7 @@ p {
   color: rgb(21, 21, 23);
 }
 .form-input::placeholder {
-  color: var(--clr-grey-5);
+  color: rgb(77, 192, 224);
 }
 .photos {
   padding: 5rem 0;
