@@ -3,7 +3,6 @@ import "./index.css";
 import Kidpage from "./Kidpage";
 import logo from "./Images/logo-navbar.png";
 import flogo from "./Images/funlogo-navbar.png";
-import klogo from "./Images/funlogo.png";
 import Foods from "./Foods";
 import micon from "./Images/menu.png";
 
@@ -155,25 +154,42 @@ function App() {
   
       }
       }
+      
+        useEffect(() => {
+          function handleWindowSizeChange() {
+            const width = window.innerWidth;
+            var hi1 = document.getElementById("p1");
+            var hi2 = document.getElementById("p2");
+            var hi3 = document.getElementById("p3");
+            var hi4 = document.getElementById("p4");
+            if (width > 750) {
+              const hiElements = [hi1, hi2, hi3, hi4];
+              hiElements.forEach((element) => {
+                if (element) {
+                  element.style.display = "block";
+                }
+              });
+            }
+            if (width <= 750) {
+              const hiElements = [hi1, hi2, hi3, hi4];
+              hiElements.forEach((element) => {
+                if (element) {
+                  element.style.display = "none";
+                }
+              });
+            }
 
-// let wid = window.outerWidth;
-
-//   useEffect(()=>{
-//     var bar = document.getElementById("bar");
-//     var hi1 = document.getElementById("p1");
-//     var hi2 = document.getElementById("p2");
-//     var hi3 = document.getElementById("p3");
-//     var hi4 = document.getElementById("p4");
-
-//     if( bar.style.display==="none"){
-//       hi1.style.display= "block";
-//       hi2.style.display= "block";
-//       hi3.style.display= "block";
-//       hi4.style.display= "block";
-//     }
-
-   
-//   } ,[wid] );
+          }
+      
+          window.addEventListener("resize", handleWindowSizeChange);
+          handleWindowSizeChange(); 
+      
+          return () => {
+            window.removeEventListener("resize", handleWindowSizeChange);
+          };
+        }, []); 
+    
+      
 
  
   return (
@@ -181,7 +197,7 @@ function App() {
       <header className="App-header">
         <nav className="navbar">
           <div className="nav-comp">
-            <a href="#">
+            <a href="# ">
               <img src={logo} alt="logo" className="logoset" />
             </a>
             <p className=" p1" id="p1"
@@ -232,20 +248,20 @@ function App() {
       </header>
 
       <main className="content-wrap">
-        <img src={logo} alt="bg-img" className="bgimg-food" />
+        
         <div>
           {hm ? (
             <div className="home-curse">
               This is a static website.Here the page present a menu card and at
               the below, word to get images be there.It was designed mainly
-              target to fun and educate your kid.{" "}
+              target to fun and educate your kid.
             </div>
           ) : (
             hm
           )}
           {am ? (
             <div className="about-curse">
-              {" "}
+            
               <p>This Website is developed by Akash S, India.</p> It is
               developed using ReactJS.
             </div>
@@ -293,7 +309,6 @@ function App() {
           </span>
         </div>
 
-        <img src={klogo} alt="bg-img" className="bgimg-fun" />
         <p className="imgline">Type a word to get relevent images</p>
         <p className="imgline2">Ex: dog, car, fruits,etc... </p>
         <Kidpage />

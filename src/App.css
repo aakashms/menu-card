@@ -2,15 +2,45 @@ html{
  scroll-behavior: smooth;
 }
 
+.label{
+  width:50%;
+}
 
 .navbar{
   display:flex; 
   background-color: rgb(240, 229, 210);
 } 
 
-.menu-icon {
-  display: none;  
+
+@media screen and (max-width: 750px) {
+  /* This is for mobile view */
+  .menu-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .p1,
+  .p2,
+  .p3,
+  .p4 {
+    display: none; /* Hide navigation elements */
+  }
 }
+
+@media screen and (min-width: 751px) {
+  /* This is for desktop view */
+  .menu-icon {
+    display: none; /* Hide the menu icon */
+  }
+
+  .p1,
+  .p2,
+  .p3,
+  .p4 {
+    display: block; /* Show navigation elements */
+  }
+
+}
+
 
 
 
@@ -73,7 +103,11 @@ html{
     z-index: 2;
     display: none;
   }
- 
+  .p4 img{
+    position:relative;
+    left:9%;
+  }
+  
   .menu-icon{
     display: block;
   }
@@ -117,10 +151,15 @@ html{
 }
 
 .content-wrap{
-  background-color: rgb(245, 179, 99);
+  background-color: rgba(245, 179, 99);
   position:relative;
   overflow: hidden; 
+  background-image: url('./Images/logo-navbar.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
 }
+
 .bgimg-food{
   position: absolute;
   left: 30%;
@@ -141,14 +180,16 @@ html{
   width: 250px;
   height: 200px;
   border-radius: 80px;
-  opacity: 1;
+  
 }
+
 h1{
   text-align: center;
   margin-top: 30px;
   color: aliceblue;
   font-family:'Times New Roman', Times, serif;
 }
+
 .food-wrap{
   box-shadow: 1px 1px 8px rgb(0, 0, 0);
   border-radius: 10px;
@@ -158,6 +199,11 @@ h1{
   padding: 10px;
   padding-bottom: 10px;
   background-color: rgb(229, 206, 174);
+}
+
+.food-wrap:hover{
+  scale: 120%;
+
 }
 .price-tag{
   display: flex;
@@ -175,7 +221,12 @@ h1{
 
 
 .kid-section{
+  background: url('./Images/funlogo-navbar.png') ;
   background-color: rgb(109, 114, 109);
+  background-position: center 80%;
+  background-repeat: no-repeat ;
+  background-attachment: fixed;
+  background-size: 15rem;
   position: relative;
 }
 .imgline{
@@ -193,7 +244,7 @@ h1{
 }
 
 .bgimg-fun{
-  opacity: 0.1;
+  opacity: 0.7;
   position:absolute;
   right: 30px;
   top: 80px;

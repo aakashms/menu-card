@@ -146,11 +146,11 @@ p {
   display: flex;
 }
 .form-input {
-  width: 100%;
+  width: 50%;
 }
 .form-input,
 .submit-btn {
-  padding: 0.75rem 1.25rem;
+  padding: 0 0.5rem 0 0.5rem ;
   border: none;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -159,11 +159,12 @@ p {
   color: var(--clr-grey-5);
   border-bottom: 3px solid var(--clr-grey-5);
 }
+
 .form-input {
   color: rgb(21, 21, 23);
 }
 .form-input::placeholder {
-  color: rgb(77, 192, 224);
+  color: rgb(172, 237, 237);
 }
 .photos {
   padding: 5rem 0;
