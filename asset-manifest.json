@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/menu-card/static/css/main.4931ef09.css",
-    "main.js": "/menu-card/static/js/main.ea2f041b.js",
+    "main.css": "/menu-card/static/css/main.c2c04b44.css",
+    "main.js": "/menu-card/static/js/main.2003bc3e.js",
     "static/media/2.png": "/menu-card/static/media/2.514bf6a2783435b43cee.png",
     "static/media/3.png": "/menu-card/static/media/3.2a55bad42a17e222bd7e.png",
     "static/media/1.png": "/menu-card/static/media/1.f622bd3585886c8ea6ed.png",
@@ -12,7 +12,6 @@
     "static/media/4.png": "/menu-card/static/media/4.efd69c959129470f1da8.png",
     "static/media/11.png": "/menu-card/static/media/11.be90ae908cb01c20a1b0.png",
     "static/media/5.png": "/menu-card/static/media/5.894f2a148b47b954c7ac.png",
-    "static/media/funlogo.png": "/menu-card/static/media/funlogo.ba71ee9ec7b8e43a5412.png",
     "static/media/funlogo-navbar.png": "/menu-card/static/media/funlogo-navbar.fa4dcae236740b372dda.png",
     "static/media/10.png": "/menu-card/static/media/10.ae165c3c00c36eb5dd48.png",
     "static/media/16.png": "/menu-card/static/media/16.f8a1c7c0396f5745ce54.png",
@@ -20,11 +19,11 @@
     "static/media/12.png": "/menu-card/static/media/12.f5a1360593cb7a2b39f3.png",
     "static/media/searchicon.png": "/menu-card/static/media/searchicon.174808b455498dd5cb2a.png",
     "index.html": "/menu-card/index.html",
-    "main.4931ef09.css.map": "/menu-card/static/css/main.4931ef09.css.map",
-    "main.ea2f041b.js.map": "/menu-card/static/js/main.ea2f041b.js.map"
+    "main.c2c04b44.css.map": "/menu-card/static/css/main.c2c04b44.css.map",
+    "main.2003bc3e.js.map": "/menu-card/static/js/main.2003bc3e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4931ef09.css",
-    "static/js/main.ea2f041b.js"
+    "static/css/main.c2c04b44.css",
+    "static/js/main.2003bc3e.js"
   ]
 }
